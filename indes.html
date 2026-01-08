@@ -1,0 +1,789 @@
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sai Web Services - Professional Websites for US Local Businesses</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    body {
+      box-sizing: border-box;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+
+    .gradient-bg {
+      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%);
+    }
+
+    .hero-pattern {
+      background-image: 
+        radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(37, 99, 235, 0.1) 0%, transparent 50%);
+    }
+
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .best-value-badge {
+      background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+      animation: pulse-badge 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse-badge {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    .section-spacing {
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
+
+    .smooth-scroll {
+      scroll-behavior: smooth;
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full smooth-scroll">
+  <div id="app" class="w-full h-full overflow-auto"><!-- Navigation -->
+   <nav id="navigation" class="w-full shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+     <div class="flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+       <svg class="w-12 h-12" viewbox="0 0 48 48" fill="none"><defs>
+         <lineargradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+         </lineargradient>
+        </defs> <circle cx="24" cy="24" r="20" fill="url(#logoGradient)" /> <path d="M18 28 Q18 22 24 22 Q30 22 30 28" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" /> <path d="M18 28 Q18 34 24 34 Q30 34 30 28" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" /> <circle cx="24" cy="16" r="3" fill="white" /> <path d="M14 20 L18 24 M30 24 L34 20" stroke="white" stroke-width="2" stroke-linecap="round" />
+       </svg>
+       <div>
+        <div id="logo-text" class="text-2xl font-bold tracking-tight">
+         SAI WEB SERVICES
+        </div>
+        <div id="logo-tagline" class="text-xs opacity-75">
+         Professional Web Solutions
+        </div>
+       </div>
+      </div>
+      <div class="hidden md:flex space-x-8"><a href="#home" id="nav-home" class="font-medium hover:opacity-75 transition">Home</a> <a href="#services" id="nav-services" class="font-medium hover:opacity-75 transition">Services</a> <a href="#about" id="nav-about" class="font-medium hover:opacity-75 transition">About</a> <a href="#pricing" id="nav-pricing" class="font-medium hover:opacity-75 transition">Pricing</a> <a href="#contact" id="nav-contact" class="font-medium hover:opacity-75 transition">Contact</a>
+      </div>
+     </div>
+    </div>
+   </nav><!-- Hero Section -->
+   <section id="home" class="w-full gradient-bg hero-pattern section-spacing relative overflow-hidden"><!-- Background Website Mockup -->
+    <div class="absolute inset-0 opacity-10 pointer-events-none">
+     <svg class="w-full h-full" viewbox="0 0 1200 800" preserveaspectratio="xMidYMid slice"><defs><!-- Drop shadow filter for images -->
+       <filter id="imageShadow" x="-50%" y="-50%" width="200%" height="200%">
+        <fedropshadow dx="0" dy="8" stddeviation="12" flood-color="white" flood-opacity="0.6" />
+       </filter>
+      </defs> <!-- Browser Window 1 --> <g transform="translate(100, 80)" filter="url(#imageShadow)">
+       <rect width="400" height="300" rx="8" fill="white" opacity="0.8" />
+       <rect width="400" height="40" rx="8" fill="white" opacity="0.9" />
+       <circle cx="20" cy="20" r="5" fill="#1e40af" />
+       <circle cx="40" cy="20" r="5" fill="#1e40af" />
+       <circle cx="60" cy="20" r="5" fill="#1e40af" />
+       <rect x="20" y="60" width="360" height="40" rx="4" fill="#e5e7eb" />
+       <rect x="20" y="120" width="160" height="20" rx="4" fill="#e5e7eb" />
+       <rect x="20" y="150" width="260" height="20" rx="4" fill="#e5e7eb" />
+       <rect x="20" y="180" width="200" height="20" rx="4" fill="#e5e7eb" />
+      </g> <!-- Browser Window 2 --> <g transform="translate(700, 200)" filter="url(#imageShadow)">
+       <rect width="350" height="280" rx="8" fill="white" opacity="0.7" />
+       <rect width="350" height="35" rx="8" fill="white" opacity="0.85" />
+       <circle cx="18" cy="18" r="4" fill="#2563eb" />
+       <circle cx="35" cy="18" r="4" fill="#2563eb" />
+       <rect x="15" y="55" width="320" height="200" rx="4" fill="#f3f4f6" />
+       <rect x="30" y="70" width="140" height="60" rx="4" fill="#e5e7eb" />
+       <rect x="180" y="70" width="140" height="60" rx="4" fill="#e5e7eb" />
+      </g> <!-- Code Symbols --> <text x="250" y="500" font-size="60" fill="white" opacity="0.3" font-family="monospace">
+       &lt;/&gt;
+      </text> <text x="850" y="150" font-size="50" fill="white" opacity="0.3" font-family="monospace">
+       { }
+      </text>
+     </svg>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
+     <div class="text-center max-w-4xl mx-auto">
+      <div class="inline-block mb-6 px-6 py-2 bg-white bg-opacity-20 rounded-full backdrop-blur-sm"><span class="text-white font-semibold">🚀 Trusted by 500+ US Businesses</span>
+      </div>
+      <h1 id="hero-headline" class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">Professional Websites That Help Your Business Get More Customers</h1>
+      <p id="hero-subheadline" class="text-xl sm:text-2xl mb-10 opacity-90">We design fast, modern, mobile-friendly websites for US local businesses.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8"><a href="#contact" id="cta-button" class="inline-block px-10 py-4 rounded-lg text-lg font-semibold shadow-xl hover:shadow-2xl transition-all hover:scale-105"> Get Your Website </a> <a href="#pricing" class="inline-block px-10 py-4 rounded-lg text-lg font-semibold bg-white bg-opacity-20 text-white hover:bg-opacity-30 transition-all backdrop-blur-sm"> View Pricing </a>
+      </div><!-- Trust Badges -->
+      <div class="flex flex-wrap justify-center gap-8 mt-12 text-white">
+       <div class="flex items-center space-x-2">
+        <svg class="w-6 h-6" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 L15 8 L22 9 L17 14 L18 21 L12 18 L6 21 L7 14 L2 9 L9 8 Z" />
+        </svg><span class="font-semibold">5-Star Rated</span>
+       </div>
+       <div class="flex items-center space-x-2">
+        <svg class="w-6 h-6" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10" /> <path d="M8 12 L10 14 L16 8" />
+        </svg><span class="font-semibold">100% Satisfaction</span>
+       </div>
+       <div class="flex items-center space-x-2">
+        <svg class="w-6 h-6" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 L15 5 L19 4 L20 8 L24 9 L22 13 L24 17 L20 18 L19 22 L15 21 L12 24 L9 21 L5 22 L4 18 L0 17 L2 13 L0 9 L4 8 L5 4 L9 5 Z" /> <path d="M9 12 L11 14 L15 10" />
+        </svg><span class="font-semibold">Fast Delivery</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Services Section -->
+   <section id="services" class="w-full section-spacing">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="text-center mb-16">
+      <h2 id="services-title" class="text-4xl font-bold mb-4">Our Services</h2>
+      <p id="services-subtitle" class="text-xl opacity-75">Comprehensive web solutions for your business</p>
+     </div>
+     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"><!-- Service Card 1 -->
+      <div class="card-hover p-8 rounded-xl shadow-lg">
+       <div class="mb-6">
+        <svg class="w-16 h-16 mx-auto" viewbox="0 0 64 64" fill="none"><rect x="8" y="12" width="48" height="36" rx="2" stroke-width="2.5" /> <rect x="8" y="48" width="48" height="4" rx="1" fill="currentColor" /> <circle cx="32" cy="30" r="8" stroke-width="2" /> <path d="M24 30 L28 34 L40 22" stroke-width="2" stroke-linecap="round" />
+        </svg>
+       </div>
+       <h3 id="service-1-title" class="text-2xl font-bold mb-3 text-center">Website Design</h3>
+       <p id="service-1-desc" class="text-center opacity-75 mb-4">Modern, professional designs that make your business stand out</p>
+       <ul class="text-sm opacity-70 space-y-2">
+        <li>✓ Custom layouts tailored to your brand</li>
+        <li>✓ Professional color schemes &amp; typography</li>
+        <li>✓ Eye-catching visual elements</li>
+        <li>✓ Conversion-focused design</li>
+       </ul>
+      </div><!-- Service Card 2 -->
+      <div class="card-hover p-8 rounded-xl shadow-lg">
+       <div class="mb-6">
+        <svg class="w-16 h-16 mx-auto" viewbox="0 0 64 64" fill="none"><rect x="16" y="8" width="32" height="48" rx="2" stroke-width="2.5" /> <circle cx="32" cy="16" r="2" fill="currentColor" /> <rect x="20" y="22" width="24" height="3" rx="1" fill="currentColor" /> <rect x="20" y="28" width="24" height="3" rx="1" fill="currentColor" /> <rect x="20" y="34" width="16" height="3" rx="1" fill="currentColor" />
+        </svg>
+       </div>
+       <h3 id="service-2-title" class="text-2xl font-bold mb-3 text-center">Mobile-Responsive</h3>
+       <p id="service-2-desc" class="text-center opacity-75 mb-4">Perfect viewing experience on all devices and screen sizes</p>
+       <ul class="text-sm opacity-70 space-y-2">
+        <li>✓ Optimized for smartphones &amp; tablets</li>
+        <li>✓ Fast loading on mobile networks</li>
+        <li>✓ Touch-friendly navigation</li>
+        <li>✓ Reach customers on any device</li>
+       </ul>
+      </div><!-- Service Card 3 -->
+      <div class="card-hover p-8 rounded-xl shadow-lg">
+       <div class="mb-6">
+        <svg class="w-16 h-16 mx-auto" viewbox="0 0 64 64" fill="none"><path d="M22 12 L32 8 L42 12 L42 28 C42 36 32 44 32 44 C32 44 22 36 22 28 Z" stroke-width="2.5" /> <path d="M28 28 L30 30 L36 24" stroke-width="2" stroke-linecap="round" />
+        </svg>
+       </div>
+       <h3 id="service-3-title" class="text-2xl font-bold mb-3 text-center">Business-Ready</h3>
+       <p id="service-3-desc" class="text-center opacity-75 mb-4">Secure, fast, and optimized to convert visitors into customers</p>
+       <ul class="text-sm opacity-70 space-y-2">
+        <li>✓ SSL security certificates included</li>
+        <li>✓ Lightning-fast page load speeds</li>
+        <li>✓ Lead capture forms integrated</li>
+        <li>✓ Built to drive conversions</li>
+       </ul>
+      </div><!-- Service Card 4 -->
+      <div class="card-hover p-8 rounded-xl shadow-lg">
+       <div class="mb-6">
+        <svg class="w-16 h-16 mx-auto" viewbox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="20" stroke-width="2.5" /> <path d="M32 12 C40 12 46 20 46 32 C46 44 40 52 32 52" stroke-width="2.5" /> <path d="M32 12 C24 12 18 20 18 32 C18 44 24 52 32 52" stroke-width="2.5" /> <line x1="12" y1="32" x2="52" y2="32" stroke-width="2.5" />
+        </svg>
+       </div>
+       <h3 id="service-4-title" class="text-2xl font-bold mb-3 text-center">SEO Optimized</h3>
+       <p id="service-4-desc" class="text-center opacity-75 mb-4">Built to rank well in search engines and attract local customers</p>
+       <ul class="text-sm opacity-70 space-y-2">
+        <li>✓ Local SEO for your area</li>
+        <li>✓ Google-friendly structure</li>
+        <li>✓ Meta tags &amp; descriptions</li>
+        <li>✓ Get found by local customers</li>
+       </ul>
+      </div><!-- Service Card 5 -->
+      <div class="card-hover p-8 rounded-xl shadow-lg">
+       <div class="mb-6">
+        <svg class="w-16 h-16 mx-auto" viewbox="0 0 64 64" fill="none"><path d="M16 28 L16 48 L48 48 L48 28" stroke-width="2.5" stroke-linecap="round" /> <path d="M12 28 L32 12 L52 28" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" /> <rect x="28" y="36" width="8" height="12" fill="currentColor" />
+        </svg>
+       </div>
+       <h3 id="service-5-title" class="text-2xl font-bold mb-3 text-center">Quick Setup</h3>
+       <p id="service-5-desc" class="text-center opacity-75 mb-4">Get your professional website live fast with our streamlined process</p>
+       <ul class="text-sm opacity-70 space-y-2">
+        <li>✓ 7-14 day typical turnaround</li>
+        <li>✓ Simple onboarding process</li>
+        <li>✓ Domain &amp; hosting assistance</li>
+        <li>✓ Training &amp; documentation</li>
+       </ul>
+      </div><!-- Service Card 6 -->
+      <div class="card-hover p-8 rounded-xl shadow-lg">
+       <div class="mb-6">
+        <svg class="w-16 h-16 mx-auto" viewbox="0 0 64 64" fill="none"><rect x="12" y="20" width="40" height="28" rx="2" stroke-width="2.5" /> <path d="M12 28 L52 28" stroke-width="2.5" /> <circle cx="32" cy="38" r="6" stroke-width="2" /> <path d="M32 32 L32 38 L36 40" stroke-width="2" stroke-linecap="round" />
+        </svg>
+       </div>
+       <h3 id="service-6-title" class="text-2xl font-bold mb-3 text-center">Lead Generation</h3>
+       <p id="service-6-desc" class="text-center opacity-75 mb-4">Contact forms and calls-to-action designed to get you more leads</p>
+       <ul class="text-sm opacity-70 space-y-2">
+        <li>✓ Strategic form placement</li>
+        <li>✓ Click-to-call buttons</li>
+        <li>✓ Email notification system</li>
+        <li>✓ Capture customer information</li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </section><!-- About Section -->
+   <section id="about" class="w-full section-spacing">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div>
+       <div class="inline-block px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold mb-4">
+        About Sai Web Services
+       </div>
+       <h2 id="about-title" class="text-4xl font-bold mb-6">Building Digital Success for Local Businesses</h2>
+       <p id="about-description" class="text-xl leading-relaxed mb-6">Sai Web Services helps small and local businesses in the US build professional websites that create trust, attract customers, and grow online.</p>
+       <p id="about-extra" class="text-lg leading-relaxed opacity-75 mb-8">We understand the unique needs of local businesses like plumbers, contractors, dentists, restaurants, real estate agents, and small companies. Our websites are designed to help you stand out from the competition and turn visitors into customers.</p>
+       <div class="grid grid-cols-2 gap-6 mb-8">
+        <div class="text-center p-4 rounded-lg bg-blue-50">
+         <div class="text-4xl font-bold text-blue-600 mb-2">
+          500+
+         </div>
+         <div class="text-sm font-semibold opacity-75">
+          Happy Clients
+         </div>
+        </div>
+        <div class="text-center p-4 rounded-lg bg-blue-50">
+         <div class="text-4xl font-bold text-blue-600 mb-2">
+          5 Years
+         </div>
+         <div class="text-sm font-semibold opacity-75">
+          Experience
+         </div>
+        </div>
+        <div class="text-center p-4 rounded-lg bg-blue-50">
+         <div class="text-4xl font-bold text-blue-600 mb-2">
+          7-14 Days
+         </div>
+         <div class="text-sm font-semibold opacity-75">
+          Avg. Delivery
+         </div>
+        </div>
+        <div class="text-center p-4 rounded-lg bg-blue-50">
+         <div class="text-4xl font-bold text-blue-600 mb-2">
+          100%
+         </div>
+         <div class="text-sm font-semibold opacity-75">
+          Satisfaction
+         </div>
+        </div>
+       </div>
+       <div class="space-y-4">
+        <div class="flex items-start space-x-3">
+         <svg class="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10" /> <path d="M8 12 L10 14 L16 8" />
+         </svg>
+         <div>
+          <h4 class="font-bold mb-1">Experienced Team</h4>
+          <p class="text-sm opacity-75">Professional designers and developers who understand US market needs</p>
+         </div>
+        </div>
+        <div class="flex items-start space-x-3">
+         <svg class="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10" /> <path d="M8 12 L10 14 L16 8" />
+         </svg>
+         <div>
+          <h4 class="font-bold mb-1">Proven Results</h4>
+          <p class="text-sm opacity-75">Our clients see increased leads and customer inquiries after launch</p>
+         </div>
+        </div>
+        <div class="flex items-start space-x-3">
+         <svg class="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10" /> <path d="M8 12 L10 14 L16 8" />
+         </svg>
+         <div>
+          <h4 class="font-bold mb-1">Ongoing Support</h4>
+          <p class="text-sm opacity-75">We're here to help even after your website goes live</p>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="rounded-xl shadow-2xl p-8">
+       <svg class="w-full h-64" viewbox="0 0 400 300" fill="none"><!-- Desk --> <rect x="50" y="180" width="300" height="15" rx="2" fill="currentColor" opacity="0.9" /> <rect x="60" y="195" width="20" height="80" rx="2" fill="currentColor" opacity="0.7" /> <rect x="320" y="195" width="20" height="80" rx="2" fill="currentColor" opacity="0.7" /> <!-- Laptop --> <rect x="120" y="140" width="160" height="100" rx="3" stroke="currentColor" stroke-width="3" fill="none" /> <rect x="130" y="150" width="140" height="75" rx="1" fill="currentColor" opacity="0.1" /> <line x1="200" y1="240" x2="150" y2="260" stroke="currentColor" stroke-width="3" /> <line x1="200" y1="240" x2="250" y2="260" stroke="currentColor" stroke-width="3" /> <line x1="140" y1="260" x2="260" y2="260" stroke="currentColor" stroke-width="4" /> <!-- Code on screen --> <rect x="140" y="160" width="40" height="4" rx="1" fill="currentColor" opacity="0.6" /> <rect x="140" y="170" width="60" height="4" rx="1" fill="currentColor" opacity="0.6" /> <rect x="140" y="180" width="50" height="4" rx="1" fill="currentColor" opacity="0.6" /> <rect x="140" y="190" width="70" height="4" rx="1" fill="currentColor" opacity="0.6" /> <!-- Coffee cup --> <ellipse cx="80" cy="165" rx="15" ry="5" fill="currentColor" opacity="0.8" /> <rect x="65" y="165" width="30" height="25" rx="2" fill="currentColor" opacity="0.8" /> <path d="M95 175 Q105 175 105 185" stroke="currentColor" stroke-width="2" fill="none" /> <!-- Plant --> <ellipse cx="330" cy="170" rx="20" ry="8" fill="currentColor" opacity="0.7" /> <path d="M330 170 Q320 140 325 130 M330 170 Q330 135 330 125 M330 170 Q340 140 335 130" stroke="currentColor" stroke-width="2" fill="none" />
+       </svg>
+      </div>
+     </div>
+    </div>
+   </section><!-- Why Choose Us Section -->
+   <section id="why-choose" class="w-full section-spacing">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="text-center mb-16">
+      <h2 id="why-title" class="text-4xl font-bold mb-4">Why Choose Us</h2>
+      <p id="why-subtitle" class="text-xl opacity-75">We deliver results that matter to your business</p>
+     </div>
+     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="flex items-start space-x-4 p-6">
+       <div class="flex-shrink-0">
+        <svg class="w-12 h-12" viewbox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke-width="2.5" /> <path d="M16 24 L20 28 L32 16" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+       </div>
+       <div>
+        <h3 id="why-1-title" class="text-xl font-bold mb-2">Professional Design</h3>
+        <p id="why-1-desc" class="opacity-75">Modern, clean websites that build trust with your customers</p>
+       </div>
+      </div>
+      <div class="flex items-start space-x-4 p-6">
+       <div class="flex-shrink-0">
+        <svg class="w-12 h-12" viewbox="0 0 48 48" fill="none"><path d="M24 8 L28 16 L36 16 L30 22 L32 30 L24 26 L16 30 L18 22 L12 16 L20 16 Z" stroke-width="2.5" />
+        </svg>
+       </div>
+       <div>
+        <h3 id="why-2-title" class="text-xl font-bold mb-2">Affordable Pricing</h3>
+        <p id="why-2-desc" class="opacity-75">High-quality websites at prices that work for small businesses</p>
+       </div>
+      </div>
+      <div class="flex items-start space-x-4 p-6">
+       <div class="flex-shrink-0">
+        <svg class="w-12 h-12" viewbox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" stroke-width="2.5" /> <path d="M24 12 L24 24 L32 28" stroke-width="2.5" stroke-linecap="round" />
+        </svg>
+       </div>
+       <div>
+        <h3 id="why-3-title" class="text-xl font-bold mb-2">Fast Delivery</h3>
+        <p id="why-3-desc" class="opacity-75">Get your website up and running quickly so you can start getting customers</p>
+       </div>
+      </div>
+      <div class="flex items-start space-x-4 p-6">
+       <div class="flex-shrink-0">
+        <svg class="w-12 h-12" viewbox="0 0 48 48" fill="none"><rect x="10" y="14" width="18" height="26" rx="2" stroke-width="2.5" /> <rect x="20" y="8" width="18" height="26" rx="2" stroke-width="2.5" /> <circle cx="19" cy="30" r="1.5" fill="currentColor" /> <circle cx="29" cy="24" r="1.5" fill="currentColor" />
+        </svg>
+       </div>
+       <div>
+        <h3 id="why-4-title" class="text-xl font-bold mb-2">Mobile-Friendly</h3>
+        <p id="why-4-desc" class="opacity-75">Perfect on phones, tablets, and computers - reach customers anywhere</p>
+       </div>
+      </div>
+      <div class="flex items-start space-x-4 p-6">
+       <div class="flex-shrink-0">
+        <svg class="w-12 h-12" viewbox="0 0 48 48" fill="none"><path d="M24 8 L30 14 L44 14 L44 34 L24 34 L24 40 L16 34 L4 34 L4 14 L18 14 Z" stroke-width="2.5" stroke-linejoin="round" /> <circle cx="14" cy="24" r="2" fill="currentColor" /> <circle cx="24" cy="24" r="2" fill="currentColor" /> <circle cx="34" cy="24" r="2" fill="currentColor" />
+        </svg>
+       </div>
+       <div>
+        <h3 id="why-5-title" class="text-xl font-bold mb-2">Business-Focused</h3>
+        <p id="why-5-desc" class="opacity-75">Every feature designed to help you get more leads and customers</p>
+       </div>
+      </div>
+      <div class="flex items-start space-x-4 p-6">
+       <div class="flex-shrink-0">
+        <svg class="w-12 h-12" viewbox="0 0 48 48" fill="none"><path d="M24 6 L28 10 L34 8 L36 14 L42 16 L40 22 L44 26 L40 30 L42 36 L36 38 L34 44 L28 42 L24 46 L20 42 L14 44 L12 38 L6 36 L8 30 L4 26 L8 22 L6 16 L12 14 L14 8 L20 10 Z" stroke-width="2.5" /> <path d="M18 24 L22 28 L30 20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+       </div>
+       <div>
+        <h3 id="why-6-title" class="text-xl font-bold mb-2">Reliable Support</h3>
+        <p id="why-6-desc" class="opacity-75">We're here to help you succeed with responsive customer service</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Pricing Section -->
+   <section id="pricing" class="w-full section-spacing">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="text-center mb-16">
+      <h2 id="pricing-title" class="text-4xl font-bold mb-4">Simple, Transparent Pricing</h2>
+      <p id="pricing-subtitle" class="text-xl opacity-75">Choose the package that fits your business needs</p>
+     </div>
+     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto"><!-- Starter Package -->
+      <div class="card-hover rounded-2xl shadow-xl p-8 relative">
+       <h3 id="price-1-name" class="text-2xl font-bold mb-2">Starter</h3>
+       <div class="mb-6"><span id="price-1-amount" class="text-5xl font-bold">$299</span>
+       </div>
+       <p id="price-1-pages" class="text-lg mb-6 opacity-75">4-Page Website</p>
+       <ul class="space-y-3 mb-8">
+        <li class="flex items-start">
+         <svg class="w-6 h-6 mr-2 flex-shrink-0" viewbox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke-width="2" /> <path d="M8 12 L10 14 L16 8" stroke-width="2" stroke-linecap="round" />
+         </svg><span>Modern Design</span></li>
+        <li class="flex items-start">
+         <svg class="w-6 h-6 mr-2 flex-shrink-0" viewbox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke-width="2" /> <path d="M8 12 L10 14 L16 8" stroke-width="2" stroke-linecap="round" />
+         </svg><span>Mobile Responsive</span></li>
+        <li class="flex items-start">
+         <svg class="w-6 h-6 mr-2 flex-shrink-0" viewbox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke-width="2" /> <path d="M8 12 L10 14 L16 8" stroke-width="2" stroke-linecap="round" />
+         </svg><span>Contact Form</span></li>
+        <li class="flex items-start">
+         <svg class="w-6 h-6 mr-2 flex-shrink-0" viewbox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke-width="2" /> <path d="M8 12 L10 14 L16 8" stroke-width="2" stroke-linecap="round" />
+         </svg><span>Basic SEO</span></li>
+       </ul><a href="#contact" class="block w-full text-center py-3 px-6 rounded-lg font-semibold transition hover:opacity-90"> Get Started </a>
+      </div><!-- Professional Package (Best Value) -->
+      <div class="card-hover rounded-2xl shadow-2xl p-8 relative transform scale-105">
+       <div class="best-value-badge absolute top-0 right-0 text-white px-4 py-2 rounded-bl-xl rounded-tr-2xl font-bold text-sm">
+        BEST VALUE
+       </div>
+       <h3 id="price-2-name" class="text-2xl font-bold mb-2">Professional</h3>
+       <div class="mb-6"><span id="price-2-amount" class="text-5xl font-bold">$399</span>
+       </div>
+       <p id="price-2-pages" class="text-lg mb-6 opacity-75">6-Page Website</p>
+       <ul class="space-y-3 mb-8">
+        <li class="flex items-start">
+         <svg class="w-6 h-6 mr-2 flex-shrink-0" viewbox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke-width="2" /> <path d="M8 12 L10 14 L16 8" stroke-width="2" stroke-linecap="round" />
+         </svg><span>Premium Design</span></li>
+        <li class="flex items-start">
+         <svg class="w-6 h-6 mr-2 flex-shrink-0" viewbox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke-width="2" /> <path d="M8 12 L10 14 L16 8" stroke-width="2" stroke-linecap="round" />
+         </svg><span>Mobile Responsive</span></li>
+        <li class="flex items-start">
+         <svg class="w-6 h-6 mr-2 flex-shrink-0" viewbox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke-width="2" /> <path d="M8 12 L10 14 L16 8" stroke-width="2" stroke-linecap="round" />
+         </svg><span>Advanced Contact Form</span></li>
+        <li class="flex items-start">
+         <svg class="w-6 h-6 mr-2 flex-shrink-0" viewbox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke-width="2" /> <path d="M8 12 L10 14 L16 8" stroke-width="2" stroke-linecap="round" />
+         </svg><span>Enhanced SEO</span></li>
+        <li class="flex items-start">
+         <svg class="w-6 h-6 mr-2 flex-shrink-0" viewbox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke-width="2" /> <path d="M8 12 L10 14 L16 8" stroke-width="2" stroke-linecap="round" />
+         </svg><span>Social Media Integration</span></li>
+       </ul><a href="#contact" class="block w-full text-center py-3 px-6 rounded-lg font-semibold transition hover:opacity-90"> Get Started </a>
+      </div><!-- Business Package -->
+      <div class="card-hover rounded-2xl shadow-xl p-8 relative">
+       <h3 id="price-3-name" class="text-2xl font-bold mb-2">Business</h3>
+       <div class="mb-6"><span id="price-3-amount" class="text-5xl font-bold">$499</span>
+       </div>
+       <p id="price-3-pages" class="text-lg mb-6 opacity-75">10-Page Website</p>
+       <ul class="space-y-3 mb-8">
+        <li class="flex items-start">
+         <svg class="w-6 h-6 mr-2 flex-shrink-0" viewbox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke-width="2" /> <path d="M8 12 L10 14 L16 8" stroke-width="2" stroke-linecap="round" />
+         </svg><span>Custom Design</span></li>
+        <li class="flex items-start">
+         <svg class="w-6 h-6 mr-2 flex-shrink-0" viewbox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke-width="2" /> <path d="M8 12 L10 14 L16 8" stroke-width="2" stroke-linecap="round" />
+         </svg><span>Mobile Responsive</span></li>
+        <li class="flex items-start">
+         <svg class="w-6 h-6 mr-2 flex-shrink-0" viewbox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke-width="2" /> <path d="M8 12 L10 14 L16 8" stroke-width="2" stroke-linecap="round" />
+         </svg><span>Multiple Contact Forms</span></li>
+        <li class="flex items-start">
+         <svg class="w-6 h-6 mr-2 flex-shrink-0" viewbox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke-width="2" /> <path d="M8 12 L10 14 L16 8" stroke-width="2" stroke-linecap="round" />
+         </svg><span>Premium SEO</span></li>
+        <li class="flex items-start">
+         <svg class="w-6 h-6 mr-2 flex-shrink-0" viewbox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke-width="2" /> <path d="M8 12 L10 14 L16 8" stroke-width="2" stroke-linecap="round" />
+         </svg><span>Social Media Integration</span></li>
+        <li class="flex items-start">
+         <svg class="w-6 h-6 mr-2 flex-shrink-0" viewbox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke-width="2" /> <path d="M8 12 L10 14 L16 8" stroke-width="2" stroke-linecap="round" />
+         </svg><span>Priority Support</span></li>
+       </ul><a href="#contact" class="block w-full text-center py-3 px-6 rounded-lg font-semibold transition hover:opacity-90"> Get Started </a>
+      </div>
+     </div>
+    </div>
+   </section><!-- Contact Section -->
+   <section id="contact" class="w-full section-spacing">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="text-center mb-16">
+      <h2 id="contact-title" class="text-4xl font-bold mb-4">Get Your Website Today</h2>
+      <p id="contact-subtitle" class="text-xl opacity-75">Contact us to discuss your project</p>
+     </div>
+     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto"><!-- Contact Info -->
+      <div class="space-y-8">
+       <div class="flex items-start space-x-4">
+        <div class="flex-shrink-0">
+         <svg class="w-12 h-12" viewbox="0 0 48 48" fill="none"><rect x="8" y="12" width="32" height="24" rx="2" stroke-width="2.5" /> <path d="M8 16 L24 26 L40 16" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+         </svg>
+        </div>
+        <div>
+         <h3 class="text-xl font-bold mb-2">Email</h3><a id="contact-email-link" href="mailto:saishiv@saiwebservices.in" class="text-lg hover:underline">saishiv@saiwebservices.in</a>
+        </div>
+       </div>
+       <div class="flex items-start space-x-4">
+        <div class="flex-shrink-0">
+         <svg class="w-12 h-12" viewbox="0 0 48 48" fill="none"><rect x="14" y="8" width="20" height="32" rx="2" stroke-width="2.5" /> <circle cx="24" cy="34" r="2" fill="currentColor" /> <line x1="18" y1="12" x2="30" y2="12" stroke-width="2.5" stroke-linecap="round" />
+         </svg>
+        </div>
+        <div>
+         <h3 class="text-xl font-bold mb-2">Phone</h3><a id="contact-phone-link" href="tel:+17656881989" class="text-lg hover:underline">+1 (765) 688-1989</a>
+        </div>
+       </div>
+       <div class="p-6 rounded-xl">
+        <h3 class="text-xl font-bold mb-3">Business Hours</h3>
+        <p class="opacity-75">Monday - Friday: 9:00 AM - 6:00 PM EST</p>
+        <p class="opacity-75">Saturday: 10:00 AM - 4:00 PM EST</p>
+        <p class="opacity-75">Sunday: Closed</p>
+       </div>
+      </div><!-- Contact Form -->
+      <div class="rounded-2xl shadow-xl p-8">
+       <form id="contact-form" action="https://formspree.io/f/mkogllzr" method="POST" target="_blank" rel="noopener noreferrer">
+        <div class="mb-6"><label for="name" class="block text-sm font-semibold mb-2">Your Name</label> <input type="text" id="name" name="name" required placeholder="Full Name" class="w-full px-4 py-3 rounded-lg border-2 focus:outline-none focus:border-blue-500 transition">
+        </div>
+        <div class="mb-6"><label for="business" class="block text-sm font-semibold mb-2">Business Name</label> <input type="text" id="business" name="business" required placeholder="Business Name" class="w-full px-4 py-3 rounded-lg border-2 focus:outline-none focus:border-blue-500 transition">
+        </div>
+        <div class="mb-6"><label for="email" class="block text-sm font-semibold mb-2">Email Address</label> <input type="email" id="email" name="email" required placeholder="Email" class="w-full px-4 py-3 rounded-lg border-2 focus:outline-none focus:border-blue-500 transition">
+        </div>
+        <div class="mb-6"><label for="phone" class="block text-sm font-semibold mb-2">Phone Number</label> <input type="tel" id="phone" name="phone" required placeholder="Phone" class="w-full px-4 py-3 rounded-lg border-2 focus:outline-none focus:border-blue-500 transition">
+        </div>
+        <div class="mb-6"><label for="message" class="block text-sm font-semibold mb-2">Project Details</label> <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project" class="w-full px-4 py-3 rounded-lg border-2 focus:outline-none focus:border-blue-500 transition resize-none"></textarea>
+        </div><button type="submit" id="submit-button" class="w-full py-4 px-6 rounded-lg font-bold text-lg transition hover:opacity-90 shadow-lg"> Send Message </button>
+        <p class="mt-4 text-sm text-center opacity-75">Your message will open in a new tab for submission</p>
+       </form>
+      </div>
+     </div>
+    </div>
+   </section><!-- Footer -->
+   <footer id="footer" class="w-full py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+     <p id="footer-text" class="opacity-75">© 2024 Sai Web Services. All rights reserved.</p>
+     <p class="opacity-75 mt-2">Professional websites for US local businesses</p>
+    </div>
+   </footer>
+  </div>
+  <script>
+    const defaultConfig = {
+      background_color: "#f8fafc",
+      surface_color: "#ffffff",
+      text_color: "#1e293b",
+      primary_action_color: "#2563eb",
+      secondary_action_color: "#1e40af",
+      hero_headline: "Professional Websites That Help Your Business Get More Customers",
+      hero_subheadline: "We design fast, modern, mobile-friendly websites for US local businesses.",
+      cta_button_text: "Get Your Website",
+      about_text: "Sai Web Services helps small and local businesses in the US build professional websites that create trust, attract customers, and grow online.",
+      contact_email: "saishiv@saiwebservices.in",
+      contact_phone: "+1 (765) 688-1989",
+      font_family: "Inter",
+      font_size: 16
+    };
+
+    async function onConfigChange(config) {
+      const bgColor = config.background_color || defaultConfig.background_color;
+      const surfaceColor = config.surface_color || defaultConfig.surface_color;
+      const textColor = config.text_color || defaultConfig.text_color;
+      const primaryColor = config.primary_action_color || defaultConfig.primary_action_color;
+      const secondaryColor = config.secondary_action_color || defaultConfig.secondary_action_color;
+      const customFont = config.font_family || defaultConfig.font_family;
+      const baseSize = config.font_size || defaultConfig.font_size;
+
+      // Apply colors
+      document.body.style.backgroundColor = bgColor;
+      document.body.style.color = textColor;
+
+      // Navigation
+      const nav = document.getElementById('navigation');
+      nav.style.backgroundColor = surfaceColor;
+      nav.style.color = textColor;
+      
+      const navLinks = nav.querySelectorAll('a');
+      navLinks.forEach(link => {
+        link.style.color = textColor;
+      });
+
+      const logoText = document.getElementById('logo-text');
+      logoText.style.color = primaryColor;
+      
+      const logoTagline = document.getElementById('logo-tagline');
+      logoTagline.style.color = textColor;
+
+      const logoSvg = nav.querySelector('svg');
+      logoSvg.style.stroke = primaryColor;
+      logoSvg.style.fill = primaryColor;
+
+      // Hero Section
+      const heroSection = document.getElementById('home');
+      heroSection.style.backgroundColor = primaryColor;
+      heroSection.style.color = '#ffffff';
+
+      const ctaButton = document.getElementById('cta-button');
+      ctaButton.style.backgroundColor = '#ffffff';
+      ctaButton.style.color = primaryColor;
+
+      // Services
+      const serviceCards = document.querySelectorAll('#services .card-hover');
+      serviceCards.forEach(card => {
+        card.style.backgroundColor = surfaceColor;
+        card.style.color = textColor;
+        const svg = card.querySelector('svg');
+        if (svg) {
+          svg.style.stroke = primaryColor;
+          svg.style.fill = primaryColor;
+        }
+      });
+
+      const servicesTitle = document.getElementById('services-title');
+      servicesTitle.style.color = textColor;
+      
+      const servicesSubtitle = document.getElementById('services-subtitle');
+      servicesSubtitle.style.color = textColor;
+
+      // About Section
+      const aboutSection = document.getElementById('about');
+      aboutSection.style.backgroundColor = bgColor;
+      aboutSection.style.color = textColor;
+
+      const aboutTitle = document.getElementById('about-title');
+      aboutTitle.style.color = textColor;
+
+      const aboutSvg = aboutSection.querySelector('svg');
+      if (aboutSvg) {
+        aboutSvg.style.fill = primaryColor;
+        aboutSvg.style.stroke = primaryColor;
+      }
+
+      // Why Choose Section
+      const whySection = document.getElementById('why-choose');
+      whySection.style.backgroundColor = surfaceColor;
+      whySection.style.color = textColor;
+
+      const whyTitle = document.getElementById('why-title');
+      whyTitle.style.color = textColor;
+
+      const whySvgs = whySection.querySelectorAll('svg');
+      whySvgs.forEach(svg => {
+        svg.style.stroke = primaryColor;
+        svg.style.fill = primaryColor;
+      });
+
+      // Pricing Section
+      const pricingSection = document.getElementById('pricing');
+      pricingSection.style.backgroundColor = bgColor;
+      pricingSection.style.color = textColor;
+
+      const pricingCards = document.querySelectorAll('#pricing .card-hover');
+      pricingCards.forEach(card => {
+        card.style.backgroundColor = surfaceColor;
+        card.style.color = textColor;
+        const button = card.querySelector('a');
+        if (button) {
+          button.style.backgroundColor = primaryColor;
+          button.style.color = '#ffffff';
+        }
+        const svgs = card.querySelectorAll('svg');
+        svgs.forEach(svg => {
+          svg.style.stroke = primaryColor;
+        });
+      });
+
+      // Contact Section
+      const contactSection = document.getElementById('contact');
+      contactSection.style.backgroundColor = surfaceColor;
+      contactSection.style.color = textColor;
+
+      const contactTitle = document.getElementById('contact-title');
+      contactTitle.style.color = textColor;
+
+      const contactSvgs = contactSection.querySelectorAll('svg');
+      contactSvgs.forEach(svg => {
+        svg.style.stroke = primaryColor;
+        svg.style.fill = primaryColor;
+      });
+
+      const contactEmailLink = document.getElementById('contact-email-link');
+      contactEmailLink.style.color = secondaryColor;
+
+      const contactPhoneLink = document.getElementById('contact-phone-link');
+      contactPhoneLink.style.color = secondaryColor;
+
+      const submitButton = document.getElementById('submit-button');
+      submitButton.style.backgroundColor = primaryColor;
+      submitButton.style.color = '#ffffff';
+
+      // Footer
+      const footer = document.getElementById('footer');
+      footer.style.backgroundColor = secondaryColor;
+      footer.style.color = '#ffffff';
+
+      // Apply font
+      const baseFontStack = '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+      document.body.style.fontFamily = `${customFont}, ${baseFontStack}`;
+
+      // Apply font sizes
+      document.getElementById('hero-headline').style.fontSize = `${baseSize * 2.5}px`;
+      document.getElementById('hero-subheadline').style.fontSize = `${baseSize * 1.25}px`;
+      document.getElementById('logo-text').style.fontSize = `${baseSize * 1.5}px`;
+      document.getElementById('logo-tagline').style.fontSize = `${baseSize * 0.75}px`;
+
+      const h2Elements = document.querySelectorAll('h2');
+      h2Elements.forEach(h2 => {
+        h2.style.fontSize = `${baseSize * 2}px`;
+      });
+
+      const h3Elements = document.querySelectorAll('h3');
+      h3Elements.forEach(h3 => {
+        h3.style.fontSize = `${baseSize * 1.25}px`;
+      });
+
+      document.body.style.fontSize = `${baseSize}px`;
+
+      // Update editable text
+      document.getElementById('hero-headline').textContent = config.hero_headline || defaultConfig.hero_headline;
+      document.getElementById('hero-subheadline').textContent = config.hero_subheadline || defaultConfig.hero_subheadline;
+      document.getElementById('cta-button').textContent = config.cta_button_text || defaultConfig.cta_button_text;
+      document.getElementById('about-description').textContent = config.about_text || defaultConfig.about_text;
+      
+      const emailText = config.contact_email || defaultConfig.contact_email;
+      document.getElementById('contact-email-link').textContent = emailText;
+      document.getElementById('contact-email-link').href = `mailto:${emailText}`;
+      
+      const phoneText = config.contact_phone || defaultConfig.contact_phone;
+      document.getElementById('contact-phone-link').textContent = phoneText;
+      document.getElementById('contact-phone-link').href = `tel:${phoneText.replace(/[^0-9+]/g, '')}`;
+    }
+
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities: (config) => ({
+          recolorables: [
+            {
+              get: () => config.background_color || defaultConfig.background_color,
+              set: (value) => {
+                config.background_color = value;
+                window.elementSdk.setConfig({ background_color: value });
+              }
+            },
+            {
+              get: () => config.surface_color || defaultConfig.surface_color,
+              set: (value) => {
+                config.surface_color = value;
+                window.elementSdk.setConfig({ surface_color: value });
+              }
+            },
+            {
+              get: () => config.text_color || defaultConfig.text_color,
+              set: (value) => {
+                config.text_color = value;
+                window.elementSdk.setConfig({ text_color: value });
+              }
+            },
+            {
+              get: () => config.primary_action_color || defaultConfig.primary_action_color,
+              set: (value) => {
+                config.primary_action_color = value;
+                window.elementSdk.setConfig({ primary_action_color: value });
+              }
+            },
+            {
+              get: () => config.secondary_action_color || defaultConfig.secondary_action_color,
+              set: (value) => {
+                config.secondary_action_color = value;
+                window.elementSdk.setConfig({ secondary_action_color: value });
+              }
+            }
+          ],
+          borderables: [],
+          fontEditable: {
+            get: () => config.font_family || defaultConfig.font_family,
+            set: (value) => {
+              config.font_family = value;
+              window.elementSdk.setConfig({ font_family: value });
+            }
+          },
+          fontSizeable: {
+            get: () => config.font_size || defaultConfig.font_size,
+            set: (value) => {
+              config.font_size = value;
+              window.elementSdk.setConfig({ font_size: value });
+            }
+          }
+        }),
+        mapToEditPanelValues: (config) => new Map([
+          ["hero_headline", config.hero_headline || defaultConfig.hero_headline],
+          ["hero_subheadline", config.hero_subheadline || defaultConfig.hero_subheadline],
+          ["cta_button_text", config.cta_button_text || defaultConfig.cta_button_text],
+          ["about_text", config.about_text || defaultConfig.about_text],
+          ["contact_email", config.contact_email || defaultConfig.contact_email],
+          ["contact_phone", config.contact_phone || defaultConfig.contact_phone]
+        ])
+      });
+    }
+
+    onConfigChange(defaultConfig);
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9bad26ea41677f8b',t:'MTc2Nzg5MDU4Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
